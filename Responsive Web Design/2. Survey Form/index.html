@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="container">
+    <div class="header">
+        <h1 id="title">Political Survey</h1>
+        <p id="description">
+            Thank you for participating.
+            <br>
+            Filling out this survey helps us understand 
+            the political makeup of our society.
+        </p>
+    </div>
+    <div class="content">
+        <div class="form-control">
+            <form id="survey-form" action="post">
+                <p>
+                    <label for="name" id="name-label">Full Name:</label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </p>
+                <br>
+                <p>
+                    <label for="email" id="email-label">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address"
+                    pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                </p>
+                <br>
+                <p>
+                    <label for="number" id="number-label">Age:</label><br>
+                    <input type="number" name="age" id="number" min=18 max=100 placeholder="Select your age">
+                </p>
+                <br>
+                <p>
+                    <label for="dropdown" id="dropdown">Which spectrum of politics do you support?</label> 
+                </p>
+                <p>
+                    <select id="dropdown">
+                        <option disabled selected value id="option">
+                            Political Ideology
+                        </option>
+                        <option value="farLeft">Far Left</option>
+                        <option value="centreLeft">Centre Left</option>
+                        <option value="radicalCentre">Radical Centre</option>
+                        <option value="centreRight">Centre Right</option>
+                        <option value="farRight">Far Right</option>
+                    </select>
+                </p>
+                <br>
+                <p>
+                    <label>Are you a member of a political party?</label>
+                </p>
+                <p>
+                    <input type="radio" id="yes" name="memberOfPoliticalParty" value="yes">
+                    <label for="yes">Yes</label>                    
+                    <br>
+                    <input type="radio" id="no" name="memberOfPoliticalParty" value="no">
+                    <label for="no">No</label>
+                </p>
+                <br>
+                <p>
+                    <label>How far will you go for your political beliefs?</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="actions" value="rallies"><label> Attend rallies</label><br>
+                    <input type="checkbox" name="actions" value="protests"><label> Attend protests</label><br>
+                    <input type="checkbox" name="actions" value="riot"><label> Rioting</label><br>
+                    <input type="checkbox" name="actions" value="terrorism"><label> Terrorism</label><br>
+                </p>
+                <br>
+                <p>
+                    <label for="comments">Do you have any feedback about this survey?</label>
+                    <br>
+                    <textarea name="comments" id="comments"></textarea>
+                </p>
+                <br>
+                <p>
+                    <input type="submit" value="Submit" id="submit">
+                </p>
+            </form>
+        </div>
+    </div>
+</main>
+    
+</body>
+</html>
+
+
+<!--
+Form Questions
+
+Name:
+Email:
+
+
+-->

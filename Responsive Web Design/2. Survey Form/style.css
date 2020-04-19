@@ -1,0 +1,64 @@
+body {
+    z-index: -1;
+    background-image: 
+        url("https://securecdn.pymnts.com/wp-content/uploads/2019/08/hotel-hackers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container {
+    background-color: rgba(1, 25, 54, 0.5);
+    display: grid;
+    margin: 10% 10% 0% 10%;
+    width: auto;
+    min-height: 800px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "header"
+        "content";
+}
+
+.header {
+    color: #F4FFFD;
+    grid-area: header;
+    text-align: center;
+    font-size: 2rem;
+    min-height: 100%;
+
+}
+
+.content {
+    grid-area: content;
+    min-height: 100%;
+}
+
+.form-control {
+    margin: 0 auto;
+    width: 70%;
+    color: #F4FFFD;
+    font-size: 1.5rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    width: 100%;
+}
+
+select{
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #A6E1FA;
+    border: none;
+}
