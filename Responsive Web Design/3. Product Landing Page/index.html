@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,6 +25,18 @@
     <main>
         <div class="content">
             <iframe width="400" height="235" src="https://www.youtube.com/embed/MKJjLwMUPJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="form">
+            <p>Join our mailing list to receive updates, exclusive offers and discounts!</p>
+            <form action="post">
+                <p>
+                    <input type="email" name="email" id="email" placeholder="Enter your email"
+                    pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+                </p>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
         </div>
     </main>
 </body>
