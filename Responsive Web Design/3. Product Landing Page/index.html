@@ -16,19 +16,19 @@
             CRAPPLE COMPUTERS
         </div>
         <nav id="nav-bar">
-            <a id="nav-link" href="#">How It Works</a> | 
-            <a id="nav-link" href="#">Features</a> | 
-            <a id="nav-link" href="#">Pricing</a>
+            <a id="nav-link" href="#video">How It Works</a> | 
+            <a id="nav-link" href="#features">Features</a> | 
+            <a id="nav-link" href="#pricing">Pricing</a>
         </nav>
     </header>
     <div class="header-space"></div>
     <main>
-        <div class="content">
+        <div class="content" id="video">
             <iframe width="400" height="235" src="https://www.youtube.com/embed/MKJjLwMUPJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div id="form">
             <p>Join our mailing list to receive updates, exclusive offers and discounts!</p>
-            <form action="post">
+            <form action="https://www.freecodecamp.com/email-submit">
                 <p>
                     <input type="email" name="email" id="email" placeholder="Enter your email"
                     pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
@@ -37,6 +37,41 @@
                     <input type="submit" value="Submit">
                 </p>
             </form>
+        </div>
+        <div id="features" class="features">
+            <div class="feature-grid"><img class="feature-icon" src="https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/128x128/shadow/sign_warning_voltage.png"></div>
+            <div>
+                <h2>Electroshock Therapy</h2>
+                <p>Our devices are so poorly engineered, they will randomly feed live current through you while you use them!</p>
+            </div>
+            <div class="feature-grid"><img class="feature-icon" src="https://www.iconexperience.com/_img/v_collection_png/128x128/shadow/garbage2.png"></div>
+            <div>
+                <h2>Designed for a Throwaway society</h2>
+                <p>Don't fix broken hardware! Crapple devices are specially designed to ensure you can't repair anything yourself.
+                    Pay exhorbitant fees for our 'genius' technicians to do it, at a price where you might as well
+                    buy a new device instead!</p>
+            </div>
+            <div class="feature-grid"><img src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/128x128/plain/users_crowd.png"></div>
+            <div>
+                <h2>Think Differently. Not.</h2>
+                <p>We control everything on the devices YOU PAY FOR. That means you do everything according to what WE THINK IS BEST.
+                    Menus, buttons, icons, user experience - everything must conform to OUR WAY. BECAUSE WE KNOW BEST. YOU WILL CONFORM.
+                </p>
+            </div>
+        </div>
+        <div id="pricing">
+            <div class="pricing-item">
+                <h3>craPhone</h3>
+                <p>Starting from $999</p>
+            </div>
+            <div class="pricing-item">
+                <h3>Crapbook Pro</h3>
+                <p>Starting from $1999</p>
+            </div>
+            <div class="pricing-item">
+                <h3>iCrap</h3>
+                <p>Starting from $5999</p>
+            </div>
         </div>
     </main>
 </body>

@@ -14,13 +14,12 @@ body {
     min-height: 60px;
     background-color: #DFF0EA;
     font-family: 'Roboto Slab', serif;
-    padding: 5px 5px;
+    margin-bottom: 10px;;
+    
 }
 
 .header-space {
-    min-width: 100%;
     min-height: 70px;
-    padding: 5px 5px;
 }
 
 #logo {
@@ -28,6 +27,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
+    margin: 5px 5px;
 }
 
 #nav-bar {
@@ -73,6 +73,7 @@ main {
     min-height: 100px;
     text-align: center;
     color: #F4FFFD;
+    width: 100%
 }
 
 form {
@@ -85,4 +86,45 @@ input[type=email] {
 
 input[type=submit] {
     width: 50%;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 128px auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+}
+
+.features img{
+    max-width: 100px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pricing {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 600px){
+    #pricing {
+        flex-direction: column;
+    }
+}
+
+.pricing-item {
+    background-color: #ebe9e9;
+    width: 50%;
+    height: 100px;
+    margin: 20px 20px;
+    text-align: center;
 }
