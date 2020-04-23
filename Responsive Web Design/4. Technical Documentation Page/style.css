@@ -1,0 +1,86 @@
+:root{
+    --navbar-width: 300px;
+    --navbar-height: 70px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: deepskyblue;
+    width: var(--navbar-width);
+    height: 100%;
+}
+
+#main-doc {
+    margin-left: var(--navbar-width);
+    width: calc(100% - var(--navbar-width));
+    background-color: dimgrey;
+}
+
+.main-section {
+    width: 100%;
+    min-height: 200px;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: yellowgreen;
+}
+
+#logo {
+    height: 100%;
+    width: 60px;
+    float: left;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    float: left;
+    height: 100%;
+    width: calc(100% - 60px);
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+@media screen and (max-width: 768px){
+    #navbar {
+        width: 100%;
+        height: var(--navbar-height);
+    }
+
+    header {
+        width: 70px;
+        height: 100%;
+        float: left;
+    }
+
+    #main-doc {
+        width: 100%;
+        margin-top: var(--navbar-height);
+        margin-left: unset;
+    }
+
+    #title {
+        display: none;
+        float: left;
+    }
+
+    #links {
+        height: 100%;
+        width: calc(100% - 70px);
+        overflow-x: hidden; 
+        overflow-x: auto; 
+    }
+}
+
