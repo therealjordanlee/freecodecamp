@@ -1,3 +1,8 @@
+body {
+    background-color: #F4FFFD;
+    font-family: 'Lora', serif;
+}
+
 :root{
     --navbar-width: 300px;
     --navbar-height: 70px;
@@ -7,27 +12,28 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: deepskyblue;
     width: var(--navbar-width);
     height: 100%;
+    background-color: #F4FFFD;
 }
+
 
 #main-doc {
     margin-left: var(--navbar-width);
     width: calc(100% - var(--navbar-width));
-    background-color: dimgrey;
 }
 
 .main-section {
     width: 100%;
     min-height: 200px;
-    color: white;
 }
 
-header {
+#logo-header {
     width: 100%;
     height: 70px;
-    background-color: yellowgreen;
+    color: #011936;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-bottom: 50px;
 }
 
 #logo {
@@ -48,26 +54,43 @@ header {
 #links {
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
     width: 100%;
     height: calc(100% - 70px);
+}
+
+.link {
+    min-height: 50px;
+}
+
+section {
+    margin: 50px 0;
+}
+
+.content-header {
+    font-size: 2em;
+}
+
+code {
+    margin: 15px 30px;
 }
 
 @media screen and (max-width: 768px){
     #navbar {
         width: 100%;
         height: var(--navbar-height);
+        margin-bottom: 20px;
     }
 
-    header {
+    #logo-header {
         width: 70px;
         height: 100%;
         float: left;
+        margin-bottom: unset;
     }
 
     #main-doc {
         width: 100%;
-        margin-top: var(--navbar-height);
+        margin-top: calc(var(--navbar-height) + 20px);
         margin-left: unset;
     }
 
@@ -79,8 +102,11 @@ header {
     #links {
         height: 100%;
         width: calc(100% - 70px);
-        overflow-x: hidden; 
         overflow-x: auto; 
+    }
+
+    .link {
+        min-height: 30px;
     }
 }
 
