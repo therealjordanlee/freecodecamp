@@ -1,0 +1,63 @@
+:root {
+    --navbar-height: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--navbar-height);
+}
+
+#logo {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 2em;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.navlink {
+    margin: 0 15px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+#welcome-section {
+    width: 100%;
+    height: calc(100vh - var(--navbar-height));
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+
+.project-card {
+
+}
