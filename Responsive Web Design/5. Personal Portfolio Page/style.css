@@ -6,8 +6,20 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:link, a:visited {
+    color: #dee3e2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 #navbar {
-    background-color: brown;
+    background-color: #204051;
+    color: #dee3e2;
     position: fixed;
     top: 0;
     left: 0;
@@ -16,7 +28,7 @@ html {
 }
 
 #logo {
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 2em;
     height: 100%;
     width: 200px;
@@ -30,6 +42,7 @@ html {
     align-items: center;
     justify-content: flex-end;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navlink {
@@ -43,7 +56,7 @@ main {
 #welcome-section {
     width: 100%;
     height: calc(100vh - var(--navbar-height));
-    background-color: chartreuse;
+    background-color: #cbf1f5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,13 +64,83 @@ main {
 }
 
 #projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     width: 100%;
-    height: 100vh;
-    background-color: cornflowerblue;
+    min-height: 100vh;
+    background-color: #a6e3e9;
+    grid-template-areas: 
+    "project project project";
+    grid-auto-rows: auto;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-card {
+    grid-template: "project";
+    width: 300px;
+    height: 350px;
+    border: #71c9ce;
+    border-width: thin;
+    border-style: solid;
+    margin: 15px 15px;
+}
 
+.project-img {
+    height: 300px;
+    width: 100%;
+}
+
+.project-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #204051;
+    text-align: center;
+    color: #ececec;
+}
+
+#contact {
+    width: 100%;
+    height: 300px;
+    background-color: #cbf1f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact-links {
+    
+}
+
+#contact-links img{
+    width: 64px;
+    height: 64px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    #projects {
+        display: grid;
+        width: 100%;
+        min-height: 100vh;
+        grid-template-areas: 
+        "project";
+        grid-auto-rows: auto;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #nav-links {
+        align-items: center;
+        justify-content: center;
+    }
 }
